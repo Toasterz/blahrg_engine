@@ -2,9 +2,9 @@ var express = require('express');
 
 var router = express.Router();
 
-router.get('/comments/:postID', getCommentsForAPost);
+router.get('/comments/:postId', getCommentsForAPost);
 router.post('/comments', createComment);
-router.delete('/comments/:commentID', deleteComment);
+router.delete('/comments/:commentId', deleteComment);
 router.put('/comments/:commentId', updateComment);
 
 module.exports = router;
